@@ -33,5 +33,17 @@ Os passos são:
        faça a instalaçao e o problema nao ocorrerá</li>
     </ol>
   </li>
-  
+   <li>Caso no Xampp nao funcione corretamente, poderar seguir os passos a seguir
+    <ol>
+      <li>Conteudo original: https://www.fucyber.com/xampp-install-sql-server-driver-on-maxos/</li>
+      <li>Download php_sqlsrv driver to php version https://github.com/Microsoft/msphpsql/releases/tag/v5.6.0</li>
+      <li>Example php 7.1 Extract file Copy php_pdo_sqlsrv_71_nts.so and php_sqlsrv_71_nts.so to
+/Application/XAMPP/xamppfiles/lib/php/extensions/no-debug-xxxx/</li>
+      <li>Open php.ini (xamppfiles/etc/php.ini) insert extension
+      extension=php_pdo_sqlsrv_71_nts.so
+      extension=php_sqlsrv_71_nts.so</li>
+      <li>Restart apache web server</li>
+      <li>Check phpinfo()</li>
+    </ol>
+  </li>
 </ol>
